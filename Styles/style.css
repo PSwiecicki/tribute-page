@@ -1,0 +1,284 @@
+body {
+  background: #CCCCCC url(../Images/background.png) top left repeat;
+}
+
+header {
+  width: 100%;
+}
+
+section {
+  margin: 0px auto;
+}
+h1 {
+  padding: 40px;
+  font-size: 64px;
+  text-align: center;
+  color: #3d3d3d;
+  font-family: "DejaVu Serif", Georgia, serif;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "DejaVu Serif", Georgia, serif;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 1.2  rem;
+  text-align: center;
+  font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+
+figure {
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px 0 5px 0;
+}
+
+img {
+  max-width: 100%;
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: 80%;
+  text-align: center;
+}
+
+.ipad {
+  box-sizing: border-box;
+  position: relative;
+  max-width: 800px;
+  margin: 0px auto;
+  border: 2px solid #262626;
+  border-radius: 20px;
+  background-color: #FFF;
+  padding: 40px 60px;
+}
+
+.ipad-camera {
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  left: 25px;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.ipad-disp {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ipad img {
+  background-color: black;
+  border: 3px solid black;
+  box-sizing: border-box;
+  transition: all 0.5s linear;
+}
+
+.ipad-btn {
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  right: 13px;
+  content: '';
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid rgb(190, 190, 190);
+  box-sizing: border-box;
+}
+
+.ipad-btn::after {
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+  right: 50%;
+  margin-right: -7px;
+  content: '';
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  border: 1px solid rgb(165, 165, 165);
+}
+
+.ipad-btn:hover {
+  border: 1px solid rgb(88, 88, 88);
+}
+
+.ipad-btn:hover::after {
+  border: 1px solid rgb(88, 88, 88);
+}
+
+.timeline {
+  box-sizing: border-box;
+  position: relative;
+  max-width: 768px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: black;
+  padding-top: 20px;
+  top: 0px;
+  bottom: 0;
+  left: 20%;
+  margin-left: -3px;
+}
+
+.timeline-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+  padding: 0px 30px 0px 20px;
+}
+
+.timeline-container-header {
+  width: 15%;
+  font-size: 2.5rem;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.timeline-container-dot {
+  position: absolute;
+  top: 10px;
+  left: 20%;
+  height: 40px;
+  width: 40px;
+  margin-left: -20px;
+  background-image: radial-gradient(circle, rgba(0,0,0,1), rgba(0,0,0,1) 30%, rgba(0,0,0,0.0) 50%);
+  border-radius: 50%;
+}
+
+.timeline-container-content {
+  position: relative;
+  opacity: 0;
+  width: 70%;
+  padding: 20px;
+  flex-wrap: wrap;
+  background: #F0F0F0;
+  border-radius: 10px;
+  margin-left: 52px;
+  border: 2px solid #494949;
+  transition: opacity 1s;
+}
+
+.timeline-container-content-arrow {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  z-index: 1;
+  transform: rotate(45deg);
+  left: -10px;
+  top: 20px;
+  background-color: #F0F0F0;
+  border-left: 2px solid #494949;
+  border-bottom: 2px solid #494949;
+}
+
+li{
+  width: 600px;
+  text-align: justify;
+  font-size: 1.2em;
+  font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 10px 0 10px 0;
+  transition: font-size 0.5s, width 0.5s;
+}
+
+a {
+  text-decoration: none;
+  color: #494949;
+}
+
+footer p {
+  text-align: center;
+  font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.show {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+
+  h1 {
+      font-size: 40px;
+      padding: 15px;
+  }
+
+  h2 {
+      font-size: 28px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+  }
+
+  .timeline-container-header {
+      font-size: 1.5rem;
+      text-align: right;
+      margin-top: 17px;
+  }
+
+  .timeline::after {
+      content: none;
+  }
+
+  .timeline-container-dot {
+      display: none;
+  }
+  .timeline-container{
+      padding-left: 0px;
+      padding-right: 0px;
+  }
+
+  .timeline-container-content {
+      margin-left: 25px;
+  }
+
+  .ipad {
+      margin: 0px;
+      border: none;
+      background-color: transparent;
+      padding: 0px;
+  }
+  .ipad-camera {
+      display: none;
+  }
+
+  .ipad img {
+      border-width: 1px;
+  }
+
+  .ipad-btn {
+      display: none;
+  }
+
+  footer p {
+      font-size: 0.7rem;
+  }
+
+  .ipad-disp img {
+      visibility: visible !important;
+      opacity: 1 !important;
+  }
+}

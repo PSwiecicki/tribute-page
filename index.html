@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Tribute page about Steve Jobs">
+  <meta name="keywords" content="HTML, CSS, Steve, Jobs, First, Page, FreeCodeCamp">
+  <meta name="author" content="Patryk Święcicki">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stive Jobs Tribute Page</title>
+  <link rel="stylesheet" href="./Styles/reset.css">
+  <link rel="stylesheet" href="./Styles/style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Steve Jobs</h1>
+      <p>Genius, visionary and inventor.</p>
+      <figure>
+        <div class="ipad">
+          <div class="ipad-camera"></div>
+          <div class="ipad-disp">
+            <img id="steve-img" src="Images/SteveJobs.jpg"
+              alt="Photo with Steve Jobs and first iPhone "/></div>
+          <div class="ipad-btn" onclick="showHide();"></div>
+        </div>
+        <figcaption>
+            Steve Jobs presents the first iPhone
+            <a  href="http://theconversation.com/is-steve-jobs-right-about-iphone-tracking-953"
+              target="_blank"
+              rel="noopener">[Source]</a>.
+        </figcaption>
+      </figure>
+    </header>
+    <section>
+      <h2>About Steve Jobs</h2>
+      <div class="timeline">
+        <div class="timeline-container">
+          <h3 class="timeline-container-header">1955</h3>
+          <div class="timeline-container-dot"></div>
+          <div class="timeline-container-content"><p>Born in San Francisco, California.</p>
+            <div class="timeline-container-content-arrow"></div>
+          </div>
+        </div>
+        <div class="timeline-container">
+          <h3 class="timeline-container-header">1972</h3>
+          <div class="timeline-container-dot"></div>
+          <div class="timeline-container-content"><p>Finishes high school and starts studying on Reed College in Portland, Oregon which he leaves the same year.</p>
+            <div class="timeline-container-content-arrow"></div>
+          </div>
+        </div>
+        <div class="timeline-container">
+          <h3 class="timeline-container-header">1974</h3>
+          <div class="timeline-container-dot"></div>
+          <div class="timeline-container-content"><p>Returns to California and starts working in Atari.</p>
+            <div class="timeline-container-content-arrow"></div>
+          </div>
+        </div>
+        <div class="timeline-container">
+          <h3 class="timeline-container-header">1975</h3>
+          <div class="timeline-container-dot"></div>
+          <div class="timeline-container-content"><p>Meets Wozniak in "Homebrew Computer Club".</p>
+            <div class="timeline-container-content-arrow"></div>
+          </div>
+        </div>
+        <div class="timeline-container">
+          <h3 class="timeline-container-header">1976</h3>
+          <div class="timeline-container-dot"></div>
+          <div class="timeline-container-content"><p>Creates the first Apple computer.</p>
+            <div class="timeline-container-content-arrow"></div>
+          </div>
+        </div>
+        <div class="timeline-container">
+          <h3 class="timeline-container-header">1984</h3>
+          <div class="timeline-container-dot"></div>
+          <div class="timeline-container-content"><p>Macintosh computer goes on sale.</p>
+            <div class="timeline-container-content-arrow"></div>
+          </div>
+        </div>
+        <div class="timeline-container">
+          <h3 class="timeline-container-header">1985</h3>
+          <div class="timeline-container-dot"></div>
+          <div class="timeline-container-content"><p>Resigns from Apple.</p>
+            <div class="timeline-container-content-arrow"></div>
+          </div>
+        </div>
+        <div class="timeline-container">
+          <h3 class="timeline-container-header">1986</h3>
+          <div class="timeline-container-dot"></div>
+          <div class="timeline-container-content"><p>Starts a new computer company - Next Inc. and the same year buys Pixar.</p>
+            <div class="timeline-container-content-arrow"></div>
+          </div>
+        </div>
+        <div class="timeline-container">
+          <h3 class="timeline-container-header">1989</h3>
+          <div class="timeline-container-dot"></div>
+          <div class="timeline-container-content"><p>First Next computer goes on sale.</p>
+            <div class="timeline-container-content-arrow"></div>
+          </div>
+        </div>
+        <div class="timeline-container">
+          <h3 class="timeline-container-header">1997</h3>
+          <div class="timeline-container-dot"></div>
+          <div class="timeline-container-content"><p>Comes back to Apple as an "interim" CEO.</p>
+            <div class="timeline-container-content-arrow"></div>
+          </div>
+        </div>
+        <div class="timeline-container">
+          <h3 class="timeline-container-header">2001</h3>
+          <div class="timeline-container-dot"></div>
+          <div class="timeline-container-content"><p>The first iPod goes on sale.</p>
+            <div class="timeline-container-content-arrow"></div>
+          </div>
+        </div>
+        <div class="timeline-container">
+          <h3 class="timeline-container-header">2004</h3>
+          <div class="timeline-container-dot"></div>
+          <div class="timeline-container-content"><p>Undergoes surgery for a pancreatic cancer.</p>
+            <div class="timeline-container-content-arrow"></div>
+          </div>
+        </div>
+        <div class="timeline-container">
+          <h3 class="timeline-container-header">2007</h3>
+          <div class="timeline-container-dot"></div>
+          <div class="timeline-container-content"><p>Apple releases it's first iPhone.</p>
+            <div class="timeline-container-content-arrow"></div>
+          </div>
+        </div>
+        <div class="timeline-container">
+          <h3 class="timeline-container-header">2011</h3>
+          <div class="timeline-container-dot"></div>
+          <div class="timeline-container-content"><p>Dies at the age of 56.</p>
+            <div class="timeline-container-content-arrow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p> If you want read more, you can <a id=tribute-link href="https://en.wikipedia.org/wiki/Steve_Jobs" target="_blank" rel="nofollow noopener">check this site</a>.</p>
+      <p>Thank you <a class="link" href="https://www.freecodecamp.org/" target="_blank" rel="nofollow noopener" >FreeCodeCamp</a> for knowledge and ideas!!</p>
+      <p>All backgrounds you can find on <a class="link" href="https://background-tiles.com/index.php" target="_blank" rel="nofollow noopener" >this site</a>.</p>
+    </footer>
+  </main>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
